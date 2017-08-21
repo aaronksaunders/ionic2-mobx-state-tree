@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Mobx & Mobx-State-Tree
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3>Regular Mobx</h3>
+
+  <todo-input [action]="testMobx"></todo-input>
+
+  <p>
+    <strong>Unfinished:  </strong>{{store.unfinishedTodoCount}}
+  </p>
+  <todo-list 
+    [deleteAction]="delTodo" 
+    [toggleAction]="toggleState" 
+    [data]="store.todos"> 
+  </todo-list>
+    
+  <!-- section for mobx-state-tree -->
+  <p>&nbsp;</p>
+  <h3>Mobx State Tree</h3>
+  <todo-input [action]="testMobxMST"></todo-input>
+  <p> <strong>Unfinished:  </strong>{{storeMST.unfinishedTodoCount}} </p>
+  <todo-list 
+    [deleteAction]="delTodoMST" 
+    [toggleAction]="toggleStateMST" 
+    [data]="storeMST.todos"> 
+  </todo-list>
+</ion-content>

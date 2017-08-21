@@ -1,0 +1,8 @@
+{
+  "name": "ionic-mobx-mobx-state-tree",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

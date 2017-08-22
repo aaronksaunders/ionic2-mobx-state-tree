@@ -3,11 +3,14 @@ import  {types}  from "mobx-state-tree";
 let TodoMST= types.model("TodoMST", {
     id: types.optional(types.number, () => Math.random()),
     title: types.string,
-    finished: false
+    finished: false,
+    completedOn: types.union(types.number, types.undefined),
+    createdOn : types.optional(types.number, () => new Date().getTime())
   })
   .actions(self => ({
     toggle() {
       self.finished = !self.finished;
+      self.completedOn = self.finished  ? new Date().getTime() : undefined
     }
   }));
 

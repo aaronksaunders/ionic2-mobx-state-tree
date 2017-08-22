@@ -3,7 +3,6 @@ import { Platform } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
 
-import { extendObservable } from 'mobx'
 @Component({
   templateUrl: 'app.html'
 })

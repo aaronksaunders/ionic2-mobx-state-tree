@@ -1,5 +1,5 @@
 import {action} from 'mobx/lib/mobx';
-import { extendObservable, observable } from 'mobx';
+import { extendObservable } from 'mobx';
 import { Injectable } from "@angular/core";
 import remotedev from 'mobx-remotedev'
 

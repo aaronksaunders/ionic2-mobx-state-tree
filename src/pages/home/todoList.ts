@@ -5,11 +5,10 @@
 // and a button. We pass in the function that needs to be called to 
 // add the item to the appropriate store
 //
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'todo-list',
-    //changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
       <div *ngFor="let todo2 of data">
         <div (click)="toggleAction(todo2)">

@@ -5,7 +5,7 @@
 // and a button. We pass in the function that needs to be called to 
 // add the item to the appropriate store
 //
-// using ion-item causes way too many screen renders...
+// using ion-item causes way too many screen renders in mobx
 //
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 

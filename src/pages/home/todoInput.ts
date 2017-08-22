@@ -5,6 +5,8 @@
 // and a button. We pass in the function that needs to be called to 
 // add the item to the appropriate store
 //
+// using ion-item causes way too many screen renders...
+//
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
@@ -16,7 +18,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
             (click)="action(title)">  
           <ion-icon name="add"></ion-icon>
         </button>
-        <ion-input placeholder="Enter Item Title.." #title></ion-input>
+        <input placeholder="Enter Item Title.." #title />
       </ion-item>
     `
   })

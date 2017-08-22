@@ -91,15 +91,6 @@
     ws "1.1.1"
     xml2js "0.4.17"
 
-"@ionic/cli-plugin-cordova@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@ionic/cli-plugin-cordova/-/cli-plugin-cordova-1.6.2.tgz#f71d10641df8b522f54f8274e0d5bc4dbb8b5208"
-  dependencies:
-    "@ionic/cli-utils" "1.7.0"
-    chalk "^2.0.0"
-    elementtree "^0.1.7"
-    tslib "^1.7.1"
-
 "@ionic/cli-plugin-ionic-angular@1.4.1":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/cli-plugin-ionic-angular/-/cli-plugin-ionic-angular-1.4.1.tgz#bb94b7ad61c2f79757b2dff041c0b7e2151777ec"
@@ -132,6 +123,39 @@
     uuid "^3.0.1"
     wrap-ansi "^3.0.1"
 
+"@ionic/cli-utils@1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@ionic/cli-utils/-/cli-utils-1.9.2.tgz#9916d8bb6ec696b948b6be1c05fbec46c87ddc0b"
+  dependencies:
+    "@types/gulp" "^3.8.33"
+    archiver "^2.0.0"
+    chalk "^2.0.0"
+    chokidar "^1.7.0"
+    ci-info "^1.0.0"
+    cross-spawn "^5.1.0"
+    dargs "^5.1.0"
+    diff "^3.3.0"
+    elementtree "^0.1.7"
+    express "^4.15.4"
+    inquirer "^3.2.1"
+    leek "0.0.24"
+    lodash "^4.17.4"
+    minimist "^1.2.0"
+    ncp "^2.0.0"
+    opn "^5.1.0"
+    proxy-middleware "^0.15.0"
+    semver "^5.4.1"
+    slice-ansi "^1.0.0"
+    ssh-config "^1.0.1"
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
+    superagent "^3.5.2"
+    tar "^2.2.1"
+    tiny-lr "^1.0.5"
+    tslib "^1.7.1"
+    uuid "^3.0.1"
+    wrap-ansi "^3.0.1"
+
 "@ionic/storage@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@ionic/storage/-/storage-2.0.1.tgz#bb1a8c276007d008d7acdda426b56065b0fd3c0b"
@@ -140,9 +164,38 @@
     localforage "~1.4.2"
     localforage-cordovasqlitedriver "~1.5.0"
 
+"@types/gulp@^3.8.33":
+  version "3.8.33"
+  resolved "https://registry.yarnpkg.com/@types/gulp/-/gulp-3.8.33.tgz#b1b076820738c9c4eb7808cd926bff1683e1c2ab"
+  dependencies:
+    "@types/node" "*"
+    "@types/orchestrator" "*"
+    "@types/vinyl" "*"
+
 "@types/localforage@0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/localforage/-/localforage-0.0.30.tgz#3d60a6bf6dda38e3f8a469611598379f1f649509"
+
+"@types/node@*":
+  version "8.0.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.24.tgz#06c580084d9add1fb40c1510ef0b448961246fb1"
+
+"@types/orchestrator@*":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@types/orchestrator/-/orchestrator-0.3.0.tgz#bf84a1699c9330d4fe89cd81263e8fc09fb32978"
+  dependencies:
+    "@types/node" "*"
+    "@types/q" "^0"
+
+"@types/q@^0":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@types/q/-/q-0.0.36.tgz#97d786389641bcbd0e22bfc729a534175976371d"
+
+"@types/vinyl@*":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/vinyl/-/vinyl-2.0.1.tgz#6b414dfdcd4a785e8e76e87565ed29e79490d9b7"
+  dependencies:
+    "@types/node" "*"
 
 abbrev@1:
   version "1.1.0"
@@ -1221,7 +1274,7 @@ debug@2.6.7:
   dependencies:
     ms "2.0.0"
 
-debug@2.6.8, debug@^2.1.0, debug@^2.2.0, debug@^2.6.0, debug@^2.6.8:
+debug@2.6.8, debug@^2.1.0, debug@^2.2.0, debug@^2.6.0, debug@^2.6.8, debug@~2.6.7:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
@@ -1255,7 +1308,7 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depd@1.1.1, depd@~1.1.0:
+depd@1.1.1, depd@~1.1.0, depd@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
 
@@ -1280,7 +1333,7 @@ dev-null@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dev-null/-/dev-null-0.1.1.tgz#5a205ce3c2b2ef77b6238d6ba179eb74c6a0e818"
 
-diff@^3.2.0:
+diff@^3.2.0, diff@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.3.0.tgz#056695150d7aa93237ca7e378ac3b1682b7963b9"
 
@@ -1571,6 +1624,39 @@ express@4.15.3:
     utils-merge "1.0.0"
     vary "~1.1.1"
 
+express@^4.15.4:
+  version "4.15.4"
+  resolved "https://registry.yarnpkg.com/express/-/express-4.15.4.tgz#032e2253489cf8fce02666beca3d11ed7a2daed1"
+  dependencies:
+    accepts "~1.3.3"
+    array-flatten "1.1.1"
+    content-disposition "0.5.2"
+    content-type "~1.0.2"
+    cookie "0.3.1"
+    cookie-signature "1.0.6"
+    debug "2.6.8"
+    depd "~1.1.1"
+    encodeurl "~1.0.1"
+    escape-html "~1.0.3"
+    etag "~1.8.0"
+    finalhandler "~1.0.4"
+    fresh "0.5.0"
+    merge-descriptors "1.0.1"
+    methods "~1.1.2"
+    on-finished "~2.3.0"
+    parseurl "~1.3.1"
+    path-to-regexp "0.1.7"
+    proxy-addr "~1.1.5"
+    qs "6.5.0"
+    range-parser "~1.2.0"
+    send "0.15.4"
+    serve-static "1.12.4"
+    setprototypeof "1.0.3"
+    statuses "~1.3.1"
+    type-is "~1.6.15"
+    utils-merge "1.0.0"
+    vary "~1.1.1"
+
 extend@^3.0.0, extend@~3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
@@ -1632,7 +1718,7 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
-finalhandler@~1.0.3:
+finalhandler@~1.0.3, finalhandler@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.0.4.tgz#18574f2e7c4b98b8ae3b230c21f201f31bdb3fb7"
   dependencies:
@@ -1919,7 +2005,7 @@ hosted-git-info@^2.1.4:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
 
-http-errors@~1.6.1:
+http-errors@~1.6.1, http-errors@~1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
   dependencies:
@@ -2033,20 +2119,16 @@ ionic-angular@3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.5.2.tgz#11214cd4d052a4871d43cd6fe504e228720999fe"
 
-ionic@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/ionic/-/ionic-3.7.0.tgz#a3c32174c6d5455c3bc74b6b9152e0f97dce23c8"
+ionic@3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/ionic/-/ionic-3.9.2.tgz#d958069ce29d9dbb8b9c1638b59995ce005ce845"
   dependencies:
-    "@ionic/cli-utils" "1.7.0"
+    "@ionic/cli-utils" "1.9.2"
     chalk "^2.0.0"
-    diff "^3.2.0"
-    minimist "^1.2.0"
     opn "^5.1.0"
     os-name "^2.0.1"
     rimraf "^2.6.1"
     semver "^5.3.0"
-    ssh-config "^1.0.1"
-    tar "^2.2.1"
     tslib "^1.7.1"
 
 ionicons@3.0.0:
@@ -3163,14 +3245,14 @@ process@^0.11.0:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
-proxy-addr@~1.1.4:
+proxy-addr@~1.1.4, proxy-addr@~1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-1.1.5.tgz#71c0ee3b102de3f202f3b64f608d173fcba1a918"
   dependencies:
     forwarded "~0.1.0"
     ipaddr.js "1.4.0"
 
-proxy-middleware@0.15.0:
+proxy-middleware@0.15.0, proxy-middleware@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/proxy-middleware/-/proxy-middleware-0.15.0.tgz#a3fdf1befb730f951965872ac2f6074c61477a56"
 
@@ -3204,7 +3286,7 @@ qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-qs@^6.4.0:
+qs@6.5.0, qs@^6.4.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.0.tgz#8d04954d364def3efc55b5a0793e1e2c8b1e6e49"
 
@@ -3648,6 +3730,24 @@ send@0.15.3:
     range-parser "~1.2.0"
     statuses "~1.3.1"
 
+send@0.15.4:
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.15.4.tgz#985faa3e284b0273c793364a35c6737bd93905b9"
+  dependencies:
+    debug "2.6.8"
+    depd "~1.1.1"
+    destroy "~1.0.4"
+    encodeurl "~1.0.1"
+    escape-html "~1.0.3"
+    etag "~1.8.0"
+    fresh "0.5.0"
+    http-errors "~1.6.2"
+    mime "1.3.4"
+    ms "2.0.0"
+    on-finished "~2.3.0"
+    range-parser "~1.2.0"
+    statuses "~1.3.1"
+
 serve-static@1.12.3:
   version "1.12.3"
   resolved "https://registry.yarnpkg.com/serve-static/-/serve-static-1.12.3.tgz#9f4ba19e2f3030c547f8af99107838ec38d5b1e2"
@@ -3656,6 +3756,15 @@ serve-static@1.12.3:
     escape-html "~1.0.3"
     parseurl "~1.3.1"
     send "0.15.3"
+
+serve-static@1.12.4:
+  version "1.12.4"
+  resolved "https://registry.yarnpkg.com/serve-static/-/serve-static-1.12.4.tgz#9b6aa98eeb7253c4eedc4c1f6fdbca609901a961"
+  dependencies:
+    encodeurl "~1.0.1"
+    escape-html "~1.0.3"
+    parseurl "~1.3.1"
+    send "0.15.4"
 
 serviceworker-cache-polyfill@^4.0.0:
   version "4.0.0"
@@ -3988,6 +4097,17 @@ tiny-lr@1.0.4:
   dependencies:
     body "^5.1.0"
     debug "~2.2.0"
+    faye-websocket "~0.10.0"
+    livereload-js "^2.2.2"
+    object-assign "^4.1.0"
+    qs "^6.4.0"
+
+tiny-lr@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tiny-lr/-/tiny-lr-1.0.5.tgz#21f40bf84ebd1f853056680375eef1670c334112"
+  dependencies:
+    body "^5.1.0"
+    debug "~2.6.7"
     faye-websocket "~0.10.0"
     livereload-js "^2.2.2"
     object-assign "^4.1.0"
